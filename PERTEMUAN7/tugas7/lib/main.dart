@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'UTS Mobile Programming',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('nama lu pada '),
+          title: Text('Riki Datul Fajar '),
         ),
         body: Column(
           children: [
