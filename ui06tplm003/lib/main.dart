@@ -1,84 +1,146 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-//state 1
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HalamanUtama(),
-    );
-  }
-}
-
-// state2
-class HalamanUtama extends StatefulWidget {
-  const HalamanUtama({super.key});
-
-  @override
-  State<HalamanUtama> createState() => _HalamanUtamastate();
-}
-
-class _HalamanUtamastate extends State<HalamanUtama> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("06tplm003---201011400665"),
-        backgroundColor: Colors.green,
-      ),
-      drawer: Drawer(
-        child: ListView(
+    return MaterialApp(
+      title: 'UTS Mobile Programming',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Riki Datul Fajar '),
+        ),
+        body: Column(
           children: [
-            Icon(
-              Icons.home,
-              size: 40,
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 192, 209, 173),
+                    child: Text("one"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 170, 224, 177),
+                    child: Text("two"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 144, 211, 144),
+                    child: Text("three"),
+                  ),
+                ),
+              ],
             ),
-            Text(
-              "home",
-              textAlign: TextAlign.center,
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 119, 173, 128),
+                    child: Text("four"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 113, 161, 112),
+                    child: Text("five"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 82, 151, 91),
+                    child: Text("six"),
+                  ),
+                ),
+              ],
             ),
-            Icon(
-              Icons.man,
-              size: 50,
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 71, 128, 69),
+                    child: Text("seven"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 60, 145, 71),
+                    child: Text("eight"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 60, 126, 54),
+                    child: Text("nine"),
+                  ),
+                ),
+              ],
             ),
-            Text(
-              "profile",
-              textAlign: TextAlign.center,
-            )
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 202, 228, 199),
+                    child: Text("ten"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 182, 238, 191),
+                    child: Text("eleven"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Color.fromARGB(255, 175, 226, 145),
+                    child: Text("twelve"),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
-      ),
-      body: const Center(
-        child: Text(
-            "Riki datul fajar \n       201011400665 \n          06tplm003"),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
-            ),
-            label: "Explore",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.feed,
-            ),
-            label: "Feed",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.settings,
-            ),
-            label: "Setting",
-          ),
-        ],
       ),
     );
   }
